@@ -10,10 +10,12 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
+      KhachHang.hasMany(models.DonHang,{
+        foreignKey: 'CustomerID',
+      })
     }
   }
-  KhanhcHang.init({
+  KhachHang.init({
     Email: DataTypes.STRING,
     Password: DataTypes.STRING,
     CustomerName: DataTypes.STRING,

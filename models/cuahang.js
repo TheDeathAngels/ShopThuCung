@@ -10,7 +10,12 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
+      CuaHang.hasMany(models.SanPham,{
+        foreignKey: 'StoreID'
+      })
+      CuaHang.hasMany(models.ChiTietDonHang,{
+        foreignKey: 'StoreID'
+      })
     }
   }
   CuaHang.init({
