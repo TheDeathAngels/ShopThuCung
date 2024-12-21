@@ -1,0 +1,85 @@
+Table KhachHang {
+  CustomerID int [pk]
+  CustomerName varchar
+  Email varchar
+  Password varchar
+  Avatar text
+  CustomerAddress varchar
+  PhoneNumber int
+  RegisterDate datetime
+  UpdateDate datetime
+}
+
+Table DanhMuc {
+  CategoryId int [pk]
+  CategoryName varchar
+  Image text
+}
+
+Table SanPham {
+  ProductID int [pk]
+  StoreID int
+  CategoryId int
+  ProductName varchar
+  Image text
+  Quantity int
+  Price int
+  Rate int
+  Description varchar
+  Created_At datetime
+  Updated_At datetime
+}
+
+Ref: "DanhMuc"."CategoryId" < "SanPham"."CategoryId"
+
+Table CuaHang {
+  StoreID int [pk]
+  StoreName varchar
+  Image text
+  PhoneNumber int
+  StoreAddress varchar
+  Email varchar
+}
+
+Ref: "CuaHang"."StoreID" < "SanPham"."StoreID"
+
+Table DonHang {
+  OrderID int [pk]
+  CustomerID int
+  Status varchar
+  PaymentMethod varchar
+  Created_At datetime
+  Updated_At datetime
+}
+
+Table ChiTietDonHang {
+  OrderDetailID int [pk]
+  OrderID int
+  ProductID int
+  StoreID int
+  ServiceID int
+  Quantity int
+  Price int
+}
+
+Ref: "DonHang"."OrderID" < "ChiTietDonHang"."OrderID"
+Ref: "SanPham"."ProductID" < "ChiTietDonHang"."ProductID"
+Ref: "KhachHang"."CustomerID" < "DonHang"."CustomerID"
+Ref: "CuaHang"."StoreID" < "ChiTietDonHang"."StoreID"
+
+Table DichVu {
+  ServiceID int [pk]
+  StoreID int
+  CategoryID int
+  ServiceName varchar
+  ServicePrice int
+  Rate int
+  Image text
+  Description varchar
+  Created_At datetime
+  Updated_At datetime
+}
+
+Ref: "DanhMuc"."CategoryId" < "DichVu"."CategoryID"
+Ref: "CuaHang"."StoreID" < "DichVu"."StoreID"
+Ref: "DichVu"."ServiceID" < "ChiTietDonHang"."ServiceID"

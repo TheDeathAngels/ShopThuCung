@@ -1,0 +1,516 @@
+{
+	"info": {
+		"_postman_id": "0cbc5156-6880-40cf-878c-e86820d6d732",
+		"name": "ShopThuCung",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40536585"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "api/products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ShopThuCung}}/api/products",
+							"host": [
+								"{{ShopThuCung}}"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/products/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ShopThuCung}}/api/products/1",
+							"host": [
+								"{{ShopThuCung}}"
+							],
+							"path": [
+								"api",
+								"products",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/products",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{ShopThuCung}}/api/products",
+							"host": [
+								"{{ShopThuCung}}"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/products",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{ShopThuCung}}/api/products/1",
+							"host": [
+								"{{ShopThuCung}}"
+							],
+							"path": [
+								"api",
+								"products",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/products",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{ShopThuCung}}/api/products",
+							"host": [
+								"{{ShopThuCung}}"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "api/categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ShopThuCung}}/categories",
+							"host": [
+								"{{ShopThuCung}}"
+							],
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/categories/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ShopThuCung}}/categories/:id",
+							"host": [
+								"{{ShopThuCung}}"
+							],
+							"path": [
+								"categories",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/categories",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{ShopThuCung}}/categories",
+							"host": [
+								"{{ShopThuCung}}"
+							],
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/categories",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{ShopThuCung}}/categories",
+							"host": [
+								"{{ShopThuCung}}"
+							],
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/categories/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{ShopThuCung}}/categories/:id",
+							"host": [
+								"{{ShopThuCung}}"
+							],
+							"path": [
+								"categories",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "api/orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ShopThuCung}}/orders",
+							"host": [
+								"{{ShopThuCung}}"
+							],
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/orders/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ShopThuCung}}/orders/:id",
+							"host": [
+								"{{ShopThuCung}}"
+							],
+							"path": [
+								"orders",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/orders",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{ShopThuCung}}/orders",
+							"host": [
+								"{{ShopThuCung}}"
+							],
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/orders",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{ShopThuCung}}/orders",
+							"host": [
+								"{{ShopThuCung}}"
+							],
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/orders/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{ShopThuCung}}/orders/:id",
+							"host": [
+								"{{ShopThuCung}}"
+							],
+							"path": [
+								"orders",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "OrderDetails",
+			"item": [
+				{
+					"name": "api/orderdetails",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ShopThuCung}}/orderdetails",
+							"host": [
+								"{{ShopThuCung}}"
+							],
+							"path": [
+								"orderdetails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/orderdetails/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ShopThuCung}}/orderdetails/:id",
+							"host": [
+								"{{ShopThuCung}}"
+							],
+							"path": [
+								"orderdetails",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/orderdetails",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{ShopThuCung}}/orderdetails",
+							"host": [
+								"{{ShopThuCung}}"
+							],
+							"path": [
+								"orderdetails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/orderdetails",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{ShopThuCung}}/orderdetails",
+							"host": [
+								"{{ShopThuCung}}"
+							],
+							"path": [
+								"orderdetails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/orderdetails/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{ShopThuCung}}/orderdetails/:id",
+							"host": [
+								"{{ShopThuCung}}"
+							],
+							"path": [
+								"orderdetails",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Shops",
+			"item": [
+				{
+					"name": "api/shops",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ShopThuCung}}/shops",
+							"host": [
+								"{{ShopThuCung}}"
+							],
+							"path": [
+								"shops"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/shops/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ShopThuCung}}/shops",
+							"host": [
+								"{{ShopThuCung}}"
+							],
+							"path": [
+								"shops"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/shops",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{ShopThuCung}}/shops",
+							"host": [
+								"{{ShopThuCung}}"
+							],
+							"path": [
+								"shops"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/shops",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{ShopThuCung}}/shops",
+							"host": [
+								"{{ShopThuCung}}"
+							],
+							"path": [
+								"shops"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/shops/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{ShopThuCung}}/shops/:id",
+							"host": [
+								"{{ShopThuCung}}"
+							],
+							"path": [
+								"shops",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
